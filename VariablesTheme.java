@@ -57,8 +57,9 @@ public class VariablesTheme {
         num1 = num1 - num2;
         System.out.println("Значения после перестановки " + num1 + ", " + num2);
         System.out.println("III.C помощью побитовой операции. Исходные значения " + num1 + ", " + num2);
-        num2 = num1 & num2;
-        num1 = num1 | num2;
+        num1 = num1 ^ num2;
+        num2 = num1 ^ num2;
+        num1 = num1 ^ num2;
         System.out.println("Значения после перестановки " + num1 + ", " + num2);
 
         System.out.println("\n6.Вывод символов и их кодов.");
@@ -85,8 +86,15 @@ public class VariablesTheme {
         System.out.println("  " + ch47 + "      " + ch92 + " ");
         System.out.println(" " + ch47 + ch95 + ch95 + ch95 + ch95 +  ch47 + ch92 + ch95 + ch95 + ch92 + " ");
 
+        System.out.println("\n8.Вывод количества сотен, десятков и единиц числа.");
+        int num = 123;
+        System.out.println("Число " + num + " содержит: " + (num/100) + 
+                           " сотню," + (num%100/10) + " десятка, " + (num%10) + " единицы.");
+        System.out.println("Сумма его цифр = " +((num/100) + (num%100/10) + (num%10)));
+        System.out.println("Произведение = " + ((num/100) * (num%100/10) * (num%10)));
 
-
-
+        System.out.println("\n9.Вывод времени.");
+        int sec = 86399;
+        System.out.println(sec/3600 + ":" + sec%3600/60 + ":" + sec%60);
     }
 }
