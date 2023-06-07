@@ -33,6 +33,16 @@ public class VariablesTheme {
         System.out.println("J  J  aaaaa  V V  aaaaa ");                                                
         System.out.println(" JJ  a     a  V  a     a");
 
+        System.out.println("\n4.Вывод min и max значений целых числовых типов.");
+        byte b = 127;
+        short s = 32767;
+        int i = 2147483647;
+        long ln = 9223372036854775807L;
+        System.out.println("Максимальное начение byte =" + b +", увеличенное на 1 = " + (b++) + ", уменьшенное на 1 = " + (b--));
+        System.out.println("Максимальное начение short =" + s +", увеличенное на 1 = " + (s++) + ", уменьшенное на 1 = " + (s--));
+        System.out.println("Максимальное начение int =" + i +", увеличенное на 1 = " + (i++) + ", уменьшенное на 1 = " + (i--));
+        System.out.println("Максимальное начение long =" + ln +", увеличенное на 1 = " + (ln++) + ", уменьшенное на 1 = " + (ln--));
+
 
     }
 }
