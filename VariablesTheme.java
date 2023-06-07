@@ -38,10 +38,42 @@ public class VariablesTheme {
         short s = 32767;
         int i = 2147483647;
         long ln = 9223372036854775807L;
-        System.out.println("Максимальное начение byte =" + b +", увеличенное на 1 = " + (b++) + ", уменьшенное на 1 = " + (b--));
-        System.out.println("Максимальное начение short =" + s +", увеличенное на 1 = " + (s++) + ", уменьшенное на 1 = " + (s--));
-        System.out.println("Максимальное начение int =" + i +", увеличенное на 1 = " + (i++) + ", уменьшенное на 1 = " + (i--));
-        System.out.println("Максимальное начение long =" + ln +", увеличенное на 1 = " + (ln++) + ", уменьшенное на 1 = " + (ln--));
+        System.out.println("Максимальное начение byte = " + b +", увеличенное на 1 = " + (b++) + ", уменьшенное на 1 = " + (b--));
+        System.out.println("Максимальное начение short = " + s +", увеличенное на 1 = " + (s++) + ", уменьшенное на 1 = " + (s--));
+        System.out.println("Максимальное начение int = " + i +", увеличенное на 1 = " + (i++) + ", уменьшенное на 1 = " + (i--));
+        System.out.println("Максимальное начение long = " + ln +", увеличенное на 1 = " + (ln++) + ", уменьшенное на 1 = " + (ln--));
+
+        System.out.println("\n5.Перестановка значений переменных.");
+        int num1 = 2;
+        int num2 = 5;
+        System.out.println("I.C помощью третьей переменной. Исходные значения " + num1 + ", " + num2); 
+        int num3 = num1;
+        num1 = num2;
+        num2 = num3;    
+        System.out.println("Значения после перестановки " + num1 + ", " + num2);
+        System.out.println("II.C помощью арифметических операций. Исходные значения " + num1 + ", " + num2);
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("Значения после перестановки " + num1 + ", " + num2);
+        System.out.println("III.C помощью побитовой операции. Исходные значения " + num1 + ", " + num2);
+        num2 = num1 & num2;
+        num1 = num1 | num2;
+        System.out.println("Значения после перестановки " + num1 + ", " + num2);
+
+        System.out.println("\n6.Вывод символов и их кодов.");
+        char c35 = (char) 35;
+        char c38 = (char) 38;
+        char c64 = (char) 64;
+        char c94 = (char) 94;
+        char c95 = (char) 95;
+        System.out.println(c35 + " " +(int)c35);
+        System.out.println(c38 + " " +(int)c38);
+        System.out.println(c64 + " " +(int)c64);
+        System.out.println(c94 + " " +(int)c94);
+        System.out.println(c95 + " " +(int)c95);
+
+
 
 
     }
