@@ -73,6 +73,18 @@ public class VariablesTheme {
         System.out.println(c94 + " " +(int)c94);
         System.out.println(c95 + " " +(int)c95);
 
+        System.out.println("\n7.Вывод в консоль ASCII-арт Дюка.");
+        char ch47 = '/';
+        char ch92 = '\\';
+        char ch40 = '(';
+        char ch41 = ')';
+        char ch95 = '_';
+        System.out.println("     " + ch47 + ch92 + "     ");
+        System.out.println("    " + ch47 + "  " + ch92 + "    ");
+        System.out.println("   " + ch47 + ch95 + ch40 + " " + ch41 + ch92 + "  ");
+        System.out.println("  " + ch47 + "      " + ch92 + " ");
+        System.out.println(" " + ch47 + ch95 + ch95 + ch95 + ch95 +  ch47 + ch92 + ch95 + ch95 + ch92 + " ");
+
 
 
 
